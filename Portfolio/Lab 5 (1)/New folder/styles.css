@@ -1,0 +1,136 @@
+html {
+  font-size: 16px; /* Set the base font size */
+}
+
+/* Common Styles for Both Pages */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 6rem;
+}
+
+.page-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem; /* 2 times the base font size (32px) */
+}
+
+h2 {
+  border-bottom: 2px solid;
+  padding-bottom: 0.5rem;
+}
+
+/* ... (previous styles) ... */
+
+/* Navigation Bar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.navbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #f1c40f;
+  transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+/* Add space for content below the fixed navigation bar */
+/* For screens less than 768px */
+@media (max-width: 768px) {
+  .page-content {
+    margin-top: 5rem; /* Add space to avoid content overlapping with the navigation bar */
+  }
+}
+
+
+/* Web Version Specific Styles */
+.web-version {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.web-version .page-header {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.web-version h2 {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.web-version .content-section {
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.web-version img {
+  max-width: 100%; /* Set max-width for images to ensure they scale down on smaller screens */
+}
+
+/* Mobile Version Specific Styles */
+.mobile-version {
+  background-color: #fff;
+  color: #333;
+}
+
+.mobile-version .page-header {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.mobile-version h2 {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.mobile-version .content-section {
+  max-width: 90%;
+  margin-bottom: 2rem;
+}
+
+.mobile-version img {
+  max-width: 100%; /* Set max-width for images to ensure they scale down on smaller screens */
+}
+
+/* Responsive Typography using rem units */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Decrease the base font size for smaller screens */
+  }
+  
+  /* Add space for content below the fixed navigation bar */
+  .page-content {
+    margin-top: 5rem; /* Add space to avoid content overlapping with the navigation bar */
+  }
+}

@@ -1,0 +1,44 @@
+html {
+    text-align: center;
+}
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+body {
+    background-image: url(./45634.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position:50% 26%;
+    
+}
+a.Navlist {
+    background-color: aliceblue; 
+    list-style: none 
+}
+ul {
+    background-color: aliceblue;
+    list-style: none
+}
+a.ullist {
+    text-align: center;
+    background-color: aqua;
+    list-style: none
+}
+div {
+    list-style: none
+}
+
+.submenu {
+    display: none;
+  }
+
+.submenu li {
+    display: inline;
+    margin-right: 10px; /* Optional: Add some spacing between items */
+  }
+
+  img {
+    width: 300px;
+    height: 200px;
+  }

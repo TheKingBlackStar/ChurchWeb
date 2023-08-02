@@ -1,0 +1,28 @@
+html {
+text-align: center;
+}
+h1 {
+color: aliceblue;
+text-align: center;
+}
+body {
+background-image: url(../Assets/45634.webp);
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position:50% 26%;
+}
+a.Navlist {
+background-color: aliceblue;  
+}
+ul {
+background-color: aliceblue;
+            
+}
+a.ullist {
+text-align: center;
+background-color: aqua;
+}
+
+ul {
+  list-style-position: inside;
+}

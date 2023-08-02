@@ -1,0 +1,323 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+nav a.active {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Page Styles */
+body.home {
+    background-color: #f9f9f9;
+}
+
+section#home {
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section#home p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+body.fitness {
+    background-color: #f5f5f5;
+}
+
+section#fitness-nutrition {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section#fitness-nutrition h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+section#fitness-nutrition h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section#fitness-nutrition p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section#fitness-nutrition .cta-btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+section#fitness-nutrition .cta-btn:hover {
+    background-color: #007bff;
+}
+
+body.mental {
+    background-color: #f0e3cf;
+}
+
+section#mental-well-being {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#mental-well-being h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+section#mental-well-being h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section#mental-well-being p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+section#mental-well-being .tip-list {
+    list-style: none;
+}
+
+section#mental-well-being .tip-list li::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+/* Additional CSS for the "Read More" button */
+.read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hide the expandable content by default */
+.expandable-content {
+    display: none;
+}
+
+/* Show the expandable content when the "expand" class is present */
+.expand {
+    display: block;
+}
+
+/* Additional CSS for the "Read More" button */
+.read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hide the expandable content by default */
+.expandable-content {
+    display: none;
+}
+
+/* Show the expandable content when the "expand" class is present */
+.expand {
+    display: block;
+}
+
+/* Styles for the "Coming Soon" section */
+.coming-soon {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.coming-soon .container {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.coming-soon p {
+    font-size: 18px;
+    color: #333;
+}
+
+.coming-soon .countdown {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #555;
+}
+
+/* Styles for the "Holistic Wellness" section */
+/* Your existing CSS styles here */
+
+body.holistic {
+    background-color: #f5f5f5;
+}
+
+.holistic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.holistic-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #009688;
+}
+
+.holistic p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.holistic-container h2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.holistic-container ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mobile-Friendly Styles */
+@media screen and (max-width: 768px) {
+    body {
+        /* Mobile-friendly styles for the entire body */
+        font-size: 16px;
+        /* Add more styles for the body as needed */
+    }
+
+    header {
+        /* Modify the header styles for mobile devices */
+        padding: 10px;
+        /* Add more styles for the header as needed */
+    }
+
+    nav {
+        /* Adjust navigation styles for smaller screens */
+        background-color: #333;
+        /* Add more styles for the navigation bar as needed */
+    }
+
+    nav ul {
+        /* Modify the styles for the navigation list */
+        list-style: none;
+        padding: 0;
+        /* Add more styles for the navigation list as needed */
+    }
+
+    nav li {
+        /* Adjust the styles for navigation list items */
+        display: inline-block;
+        margin: 0 10px;
+        /* Add more styles for navigation list items as needed */
+    }
+
+    nav a {
+        /* Modify the link styles in the navigation bar */
+        color: #fff;
+        text-decoration: none;
+        /* Add more styles for navigation links as needed */
+    }
+
+    /* Add more styles for other sections and elements as needed */
+}
+
+
+
+
+
